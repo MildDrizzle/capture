@@ -7,11 +7,11 @@ import home2 from "../img/home2.png";
 
 //Styles
 import styled from "styled-components";
-import { About, Description, Image, Hide } from "./../styles";
+import { About, Description, Image } from "./../styles";
 
 const ServicesSection = () => {
   return (
-    <About>
+    <Services>
       <Description>
         <h2>
           High <span>Quality</span> services
@@ -50,7 +50,7 @@ const ServicesSection = () => {
       <Image>
         <img src={home2} alt="camera" />
       </Image>
-    </About>
+    </Services>
   );
 };
 
@@ -65,7 +65,6 @@ const Services = styled(About)`
 `;
 
 const Cards = styled.div`
-  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
 `;
